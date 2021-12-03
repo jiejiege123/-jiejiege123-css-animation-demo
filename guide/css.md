@@ -1,23 +1,19 @@
 从优化的角度来说，能用 CSS 解决问题的话就不要用图片了。<br />
 <br />CSS3 强大的动画功能，可以实现很炫酷动效。<br />
 
-<a name="0d5cb251"></a>
 ## CSS3 动画基础
 
 <br />作为一个小白，首先来看下用 CSS 怎么让元素动起来。<br />
 
-<a name="transform"></a>
 ### transform
 
 <br />主要使用的属性之一，可以给元素进行 2D 或 3D 转换。主要就包括移动(translate)、旋转(rotate)、缩放(scale)和倾斜(skew)。一般来说，方法都是既有针对两轴或者三轴的，也有单独针对某个轴设置的，通常是 '方法Y'，轴大写即可。<br />
 
-<a name="5797207f"></a>
 ### 2D 转换
 
 <br />有个转换点的问题<br />
 
-<a name="transform-origin"></a>
-#### transform-origin
+#### 啊发发但是transform-origin
 
 <br />默认的转换点在中心。<br />
 
@@ -27,7 +23,6 @@ transform-origin: x-axis y-axis z-axis;
 
 <br />单位一般来说就是百分比，z 轴的一般用不上。对于 translate 位移来说没有意义。<br />
 
-<a name="10bfc6f1"></a>
 #### translate() 位移
 
 <br />根据左(X轴)和顶部(Y轴)位置给定的参数，从当前元素位置移动。<br />被移动的元素类似于相对定位，不会影响其他元素。<br />
@@ -41,7 +36,6 @@ div{
 
 <br />其他相关方法： `translateX()`和 `translateY()`<br />
 
-<a name="7eec1a5e"></a>
 #### rotate() 旋转
 
 <br />这个比较简单，就一个参数，单位是 `deg`，代表°，允许负值。<br />
@@ -54,7 +48,6 @@ div{
 
 <br />默认是旋转中心就是 div 的中心，可以通过 `transform-origin` 改变中心位置。<br />
 
-<a name="5f78b643"></a>
 #### scale() 缩放
 
 <br />宽度和高度的缩放，参数是数值，代表缩放倍数。<br />
@@ -67,7 +60,6 @@ div{
 
 <br />默认是旋转中心就是 div 的中心，可以通过 `transform-origin` 改变中心位置。<br />
 
-<a name="16bbaff6"></a>
 #### skew() 倾斜
 
 <br />分别表示X轴和Y轴倾斜的角度，可以用来做**平行四边形**，这是之前没想到的。<br />
@@ -80,14 +72,12 @@ div {
 
 <br />默认是旋转中心就是 div 的中心，可以通过 `transform-origin` 改变中心位置。<br />
 
-<a name="2da2e4a0"></a>
 ### 3D转换
 
 <br />与 2D 的区别在于有 Z 轴方向或者其他能够起到3维效果上的变化。<br />
 <br />相对就很好理解。<br />
 <br />除此之外，还有几个伴生属性<br />
 
-<a name="tansform-style"></a>
 #### tansform-style
 
 <br />规定子元素在空间中如何显示。<br />
@@ -99,7 +89,6 @@ transform-style: flat|preserve-3d;
 <br />flat: 子元素在2D平面呈现。<br />preserve-3d: 子元素在3D平面呈现。<br />
 <br />具体还要看实例。<br />
 
-<a name="0495ccc9"></a>
 #### perspective 透视视图
 
 <br />用在子元素使用了转换的父元素上，表示元素距离视图的距离。<br />
