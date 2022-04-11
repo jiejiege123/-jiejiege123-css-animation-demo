@@ -9,7 +9,7 @@ const { mdPlugin } = require('./plugins/plugins')
 module.exports = {
   lang: 'zh-Hans',
   title: 'css-animation-demo',
-  description: '学习前端动效，收集优秀按理。',
+  description: '学习前端动效，收集优秀案例。',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', async: '' }]
